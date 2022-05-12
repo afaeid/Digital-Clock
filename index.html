@@ -7,6 +7,7 @@
   <meta name="Description" content="This is a clock which I have made with  a vary light JavaScript. Visit this website.">
   <meta name="keyword" content="Clock">
   <title>Digital Clock</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -40,7 +41,7 @@
     if(hr < 10){
       hr = '0' + hr;
     }
-    display.textContent = hr + ":" + min + ":" + sec + day;
+    display.textContent = hr + ":" + min + ":" + sec +"  " + day;
     },1)
   </script>
 </body>
