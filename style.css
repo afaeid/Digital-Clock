@@ -26,10 +26,25 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
   color: #EBFF4A;
  /* top: 50%;*/
   font-size: 30px;
   cursor: pointer;
   pointer-events: none;
+  position: relative;
   /*transform: translateY(-50%)*/
+}
+.display .time{
+  display: flex;
+}
+.display .instant-day{
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 4px;
+}
+.display .date{
+  font-size: 15px;
+  position: absolute;
+  bottom: 10px;
 }

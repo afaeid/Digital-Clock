@@ -14,6 +14,13 @@
   <div class="container">
     <div class="clock">
       <div class="display">
+        <div class="time">
+         <div class="instant-time">
+         </div> 
+         <div class="instant-day"></div>
+        </div>
+        <!-- <div class="date">
+        </div> -->
       </div>
     </div>
   </div>
@@ -22,11 +29,16 @@
   
   <script>
   var func = setInterval(()=>{
-    const display = document.querySelector('.display');
+    const time = document.querySelector('.instant-time');
+    const dayYear = document.querySelector('.date');
+    const amPm = document.querySelector('.instant-day');
     var date = new Date();
     var hr = date.getHours();
     var min = date.getMinutes();
     var sec = date.getSeconds();
+    var sDate = date.getDate();
+    var year = date.getFullYear();
+    var mn = date.getMonth();
     var day = 'AM';
     if(hr > 12){
       day = 'PM';
@@ -41,7 +53,9 @@
     if(hr < 10){
       hr = '0' + hr;
     }
-    display.textContent = hr + ":" + min + ":" + sec +"  " + day;
+    time.textContent = hr + ":" + min + ":" + sec;
+    amPm.textContent= day;
+    dayYear.textContent = sDate + "," + mn + "," + year;
     },1)
   </script>
 </body>
