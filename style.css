@@ -39,12 +39,12 @@
   display: flex;
 }
 .display .instant-day{
-  font-size: 15px;
+  font-size: 20px;
   margin-left: 20px;
   margin-top: 4px;
 }
 .display .date{
-  font-size: 15px;
+  font-size:30px;
   position: absolute;
   bottom: 10px;
 }
