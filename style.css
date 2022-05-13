@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace;
+  font-family: "DejaVu Sans Mono",monospace;
+  font-weight: bold;;
 }
 .container{
   width: 100%;
@@ -12,8 +13,8 @@
   background: #3C3E50;
 }
 .clock{
-  width: 200px;
-  height: 60px;
+  width: 250px;
+  height: 100px;
   background: linear-gradient(to right,#0090FC,#FF3E3E);
   position: relative;
   border-radius: 5px;
@@ -27,6 +28,6 @@
   text-align: center;
   color: #EBFF4A;
  /* top: 50%;*/
-  font-size: 25px;
+  font-size: 30px;
   /*transform: translateY(-50%)*/
 }
