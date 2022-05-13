@@ -37,6 +37,8 @@
 }
 .display .time{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .display .instant-day{
   font-size: 20px;
