@@ -29,5 +29,7 @@
   color: #EBFF4A;
  /* top: 50%;*/
   font-size: 30px;
+  cursor: pointer;
+  pointer-events: none;
   /*transform: translateY(-50%)*/
 }
